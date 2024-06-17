@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typeIn {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .animate-type-in > span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typeIn 0.5s cubic-bezier(1, 0, 0, 1) forwards;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  
